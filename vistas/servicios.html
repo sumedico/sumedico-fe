@@ -1,0 +1,23 @@
+<div class="starter-template">
+    <h1>Servicios</h1>
+    <p class="lead">Nuestra cartera de servicios, siempre a la altura de sus necesidades.</p>
+
+    <div class="row">
+        <div class="item col-md-8">
+            <h2>Servicio</h2>
+        </div>
+        <div class="item col-md-4">
+            <h2>Imágen</h2>
+        </div>
+    </div>
+    <div class="productos row" ng-repeat="servicio in servicios">
+        <div class="item col-md-8">
+            <h3 class="name">{{servicio.name}} </h3>
+            <p class="description">{{servicio.description}}</p>
+        </div>
+        <div class="image col-md-4">
+            <img src="{{servicio.img}}"/>
+        </div>
+    </div>
+
+</div>

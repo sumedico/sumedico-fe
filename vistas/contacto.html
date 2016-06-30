@@ -1,0 +1,11 @@
+<div class="starter-template">
+    <h1>Contacto</h1>
+    <form ng-submit="enviar()">
+        <div><label>Nombre</label><input type="text" ng-model="contact.sender" /></div>
+        <div><label>Email</label><input type="text" ng-model="contact.senderaddr" /></div>
+        <div><label>Asunto</label><input type="text" ng-model="contact.subject" /></div>
+        <div><label>Texto</label><textarea ng-model="contact.text"></textarea></div>
+        <input type="submit" />
+    </form>
+    <h3>{{thankyou}}</h3>
+</div>

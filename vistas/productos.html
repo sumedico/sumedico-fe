@@ -1,0 +1,29 @@
+<div class="starter-template">
+    <h1>Productos</h1>
+    <p class="lead">Ofrecemos los mas variados productos para satisfacer sus necesidades.</p>
+
+    <div class="row">
+        <div class="item col-md-5">
+            <h2>Producto</h2>
+        </div>
+        <div class="item col-md-3">
+            <h2>Precio</h2>
+        </div>
+        <div class="item col-md-4">
+            <h2>Imágen</h2>
+        </div>
+    </div>
+    <div class="productos row" ng-repeat="producto in productos">
+        <div class="item col-md-5">
+            <h3 class="name">{{producto.name}} </h3>
+            <p class="description">{{producto.description}}</p>
+        </div>
+        <div class="price col-md-3">
+            <p class="price">{{producto.price | currency }}</p>
+        </div>
+        <div class="image col-md-4">
+            <img src="{{producto.img}}"/>
+        </div>
+    </div>
+
+</div>
