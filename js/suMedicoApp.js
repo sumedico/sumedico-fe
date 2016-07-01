@@ -4,7 +4,7 @@ var app = angular.module('suMedicoApp',["ngRoute"])
             .when("/", {
                 /*controller: "evalIntegradoraController",*/
                 controllerAs: "vm",
-                templateUrl: "vistas/home.html"
+                templateUrl: "vistas/home-paciente.html"
             })
             .when("/asistencia", {
                 //controller: "productosController",
