@@ -16,6 +16,11 @@ var app = angular.module('suMedicoApp',["ngRoute"])
                 controllerAs: "vm",
                 templateUrl: "vistas/recepcion/recepcion.html"
             })
+            .when("/pacientes/recepcion/detalle", {
+                //controller: "contactoController",
+                controllerAs: "vm",
+                templateUrl: "vistas/recepcion/detalle.html"
+            })
             .when("/turnos",{
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/reserva/normal.html"
