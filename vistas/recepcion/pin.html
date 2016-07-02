@@ -1,14 +1,15 @@
-<h1>Recepcion de paciente</h1>
+<h1>Generaci&oacute;n de PIN</h1>
 
 <div class="panel panel-default" style="max-width: 400px">
     <div class="panel-heading">
-        <h4>Paciente ${paciente} - Recepcion</h4>
+        <h4>PIN #{{pin}}</h4>
     </div>
     <div class="panel-body">
         <p>Fecha y hora: {{fecha}}</p>
-        <p>Profesional: {{profesional}}</p>
-        <p>Consultorio: {{consultorio}}</p>
-        <p class="text-muted">* Ser&aacute; llamado por apellido en la sala de espera.</p>
+        <p>CUIL: {{paciente.cuil}}</p>
+        <p>Nombre y apellido: {{paciente.nombre}}</p>
+
+        <p class="text-muted">* Conserve este comprobante.</p>
     </div>
     <div class="panel-footer">
         <a class="btn btn-sm btn-default"><span class="glyphicon glyphicon-print"></span></a>

@@ -1,0 +1,18 @@
+<h2>Registrar paciente</h2>
+
+<p class="lead">Ingrese el CUIL del paciente a registrar</p>
+<div class="panel panel-default" style="max-width: 400px">
+    <div class="panel-body">
+        <form class="">
+            <div class="form-group">
+                <label for="cuil">CUIL</label>
+                <input type="number" id="cuil" name="cuil" class="form-control" placeholder="CUIL" ng-model="paciente.cuil" />
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" ng-model="paciente.nombre" />
+            </div>
+            <a class="btn btn-default" ng-click="update(user)">Generar PIN de registro</a>
+        </form>
+    </div>
+</div>
