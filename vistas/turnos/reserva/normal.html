@@ -1,84 +1,19 @@
-<style type="text/css">
-    @media (min-width: 600px) {
-        .menu-turnos{
-            width: 600px;
-        }
-    }
-</style>
+<div class="container" style="max-width:800px">
+    <h1>Pedir un turno</h1>
 
-<div class="menu-turnos">
-    <ul class="nav nav-stacked" id="wizard">
-        <li>
-            <a class="btn btn-primary" data-toggle="collapse" data-target="#hospital" data-parent="#wizard">1. Hospital <span class="caret"></span></a>
-            <div class="collapse" id="hospital">
-                <div class="panel-group">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5>Búqueda por selección</h5>
-                        </div>
-                        <div class="panel-body">
-                            Por ubicacion
-                            Hospital
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5>Búsqueda exacta</h5>
-                        </div>
-                        <div class="panel-body">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <a class="btn btn-primary disabled" data-toggle="collapse" data-target="#especialidad" data-parent="#wizard">2. Especialidad <span class="caret"></span></a>
-            <div class="collapse panel-group" id="especialidad">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h5>Búqueda por selección</h5>
-                    </div>
-                    <div class="panel-body">
-                        Por ubicacion
-                        Hospital
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h5>Búsqueda exacta</h5>
-                    </div>
-                    <div class="panel-body">
-
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <a class="btn btn-primary disabled" data-toggle="collapse" data-target="#medico" data-parent="#wizard">3. Medico <span class="caret"></span></a>
-            <div class="collapse panel-group" id="medico">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h5>Búqueda por selección</h5>
-                    </div>
-                    <div class="panel-body">
-                        Por ubicacion
-                        Hospital
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h5>Búsqueda exacta</h5>
-                    </div>
-                    <div class="panel-body">
-
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <a class="btn btn-primary disabled"><span class="glyphicon glyphicon-calendar"></span> Ver turnos disponibles</a>
-        </li>
-    </ul>
+    <div class="panel panel-default" style="margin-top:10px;">
+        <div class="panel-heading">
+            <h5>Seleccione una especialidad</h5>
+        </div>
+        <div class="panel-body">
+            <select class="form-control" ng-model="especialidad" ng-options="e.nombre for e in especialidades">
+            </select>
+        </div>
+        <div class="panel-footer">
+            <a class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Buscar por hospital y especialista</a>
+            <a class="btn btn-default"><span class="glyphicon glyphicon-map-marker"></span> Buscar m&aacute;s cercano</a>
+            <a class="btn btn-default"><span class="glyphicon glyphicon-time"></span> Buscar m&aacute;s r&aacute;pido</a>
+        </div>
+    </div>
 </div>
 

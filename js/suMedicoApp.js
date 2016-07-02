@@ -12,36 +12,42 @@ var app = angular.module('suMedicoApp',["ngRoute"])
                 templateUrl: "vistas/turnos/asistencia.html"
             })
             .when("/reserva", {
-                //controller: "serviciosController",
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/reserva/index.html"
             })
             .when("/misturnos", {
-                //controller: "contactoController",
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/misturnos.html"
             })
             .when("/turnos/reservados",{
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/reservados.html"
             })
             .when("/turnos/anteriores",{
-            controllerAs: "vm",
-            templateUrl: "vistas/turnos/anteriores.html"
+                controller: "turnosController",
+                controllerAs: "vm",
+                templateUrl: "vistas/turnos/anteriores.html"
             })
             .when("/turnos/grilla",{
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/misturnos-grid.html"
             })
             .when("/turnos/reserva/normal",{
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/reserva/normal.html"
             })
             .when("/turnos/reserva/rapida",{
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/reserva/rapida.html"
             })
             .when("/turnos/reserva/cercana",{
+                controller: "turnosController",
                 controllerAs: "vm",
                 templateUrl: "vistas/turnos/reserva/cercana.html"
             });
